@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            text-align: center;
+
+        }
+
+        button {
+            border-radius: 13px;
+            border: 1px solid orangered;
+            font-weight: bold;
+            font-size: 25px;
+
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            transform: scale(0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Ejemplo :Creacion de un elemento</h1>
+    <button onclick="agregar()">Añadir</button>
+    <script>
+        function agregar() {
+            let nuevo = document.createElement("p");
+            nuevo.textContent = "Otra vez perdimos, este párrafo se añade al final del body.";
+            document.body.appendChild(nuevo);
+        }
+    </script>
+</body>
+
+</html>
